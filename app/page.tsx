@@ -1,4 +1,5 @@
 import UsersClientComplete from "./components/UserClientComplete";
+import PostsClientComplete from "./components/PostsClientComplete";
 
 export default function Home() {
   return (
@@ -14,6 +15,12 @@ export default function Home() {
 
       <div className="max-w-6xl mx-auto py-12 px-4">
         <UsersClientComplete />
+      </div>
+      <div className="max-w-6xl mx-auto py-12 px-4">
+        <header className="mb-6">
+          <h2 className="text-3xl font-bold">Post Management</h2>
+        </header>
+        <PostsClientComplete />
       </div>
 
       <footer className="bg-slate-50 dark:bg-slate-800 mt-20 py-8 px-4 border-t border-slate-200 dark:border-slate-700">

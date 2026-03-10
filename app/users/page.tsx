@@ -1,7 +1,7 @@
 import { User } from "@prisma/client";
 
 async function getUsers(): Promise<User[]> {
-  const res = await fetch("/api/users", { // use relative path in server
+  const res = await fetch("/api/users", {
     cache: "no-store",
   });
 
