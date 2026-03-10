@@ -33,7 +33,7 @@ export default function PostsClientComplete() {
         body: JSON.stringify({ title, content, authorId, published }),
       });
     } else {
-      await fetch(`/api/posts/${editingId}`, {
+      await fetch("/api/posts", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -147,7 +147,7 @@ export default function PostsClientComplete() {
 
       <div className="bg-white dark:bg-slate-800 shadow-lg rounded-2xl p-8 border border-slate-100 dark:border-slate-700">
         <h2 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white flex items-center gap-2">
-          <span>👥</span> Post List
+          <span>📝</span> Post List
         </h2>
 
         {posts.length === 0 ? (
