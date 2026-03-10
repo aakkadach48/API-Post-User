@@ -12,12 +12,9 @@ type Post = {
 
 export default function PostsClient() {
   const [posts, setPosts] = useState<Post[]>([]);
-
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-
   const [editingId, setEditingId] = useState<number | null>(null);
-
   const [authorId, setAuthorId] = useState<number>(1);
   const [published, setPublished] = useState(false);
 
